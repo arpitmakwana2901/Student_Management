@@ -183,7 +183,7 @@ const StudentList = () => {
               </div>
 
               {/* Pagination */}
-              <div className="px-6 py-4 bg-gray-50 dark:bg-gray-700 border-t border-gray-200 dark:border-gray-600 flex items-center justify-between">
+              <div className="px-4 sm:px-6 py-4 bg-gray-50 dark:bg-gray-700 border-t border-gray-200 dark:border-gray-600 flex flex-col sm:flex-row items-center justify-between gap-3">
                 <div className="text-sm text-gray-500 dark:text-gray-300">
                   Page <span className="font-medium">{count}</span> of{" "}
                   <span className="font-medium">

@@ -106,7 +106,7 @@ const StudentDetails = () => {
           <DetailItem label="Website" value={student.website} isLink />
         </div>
 
-        <div className="mt-8 flex space-x-4">
+        <div className="mt-8 flex flex-wrap gap-3">
           <Link
             to="/studentList"
             className="relative px-6 py-2 bg-gradient-to-r from-gray-500 to-gray-600 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:from-gray-600 hover:to-gray-700 group overflow-hidden"
@@ -135,7 +135,7 @@ const StudentDetails = () => {
 };
 
 const DetailItem = ({ label, value, isLink = false }) => (
-  <div className="flex justify-between items-center border-b pb-2 group border-gray-200 dark:border-gray-600">
+  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b pb-2 group border-gray-200 dark:border-gray-600 gap-1">
     <span className="font-semibold text-gray-700 dark:text-gray-300">
       {label}:
     </span>
@@ -144,12 +144,12 @@ const DetailItem = ({ label, value, isLink = false }) => (
         href={`http://${value}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200 hover:underline"
+        className="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200 hover:underline break-all"
       >
         {value}
       </a>
     ) : (
-      <span className="text-gray-600 dark:text-gray-400 transition-colors duration-200 group-hover:text-blue-600 dark:group-hover:text-blue-400">
+      <span className="text-gray-600 dark:text-gray-400 transition-colors duration-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 break-all">
         {value}
       </span>
     )}

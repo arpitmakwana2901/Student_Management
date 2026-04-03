@@ -179,17 +179,17 @@ const StudentForm = () => {
             </div>
 
             {/* Form Actions */}
-            <div className="mt-8 flex justify-end space-x-4">
+            <div className="mt-8 flex flex-col sm:flex-row justify-end gap-3">
               <button
                 type="button"
                 onClick={() => navigate("/")}
-                className="px-6 py-2 border border-gray-300 dark:border-gray-600 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 hover:shadow-md"
+                className="w-full sm:w-auto px-6 py-2 border border-gray-300 dark:border-gray-600 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 hover:shadow-md"
               >
                 Cancel
               </button>
               <button
                 type="submit"
-                className="relative px-6 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:from-blue-600 hover:to-indigo-700 group overflow-hidden"
+                className="w-full sm:w-auto relative px-6 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:from-blue-600 hover:to-indigo-700 group overflow-hidden"
               >
                 <span className="relative z-10">
                   {formData.id ? "Update Student" : "Add Student"}
